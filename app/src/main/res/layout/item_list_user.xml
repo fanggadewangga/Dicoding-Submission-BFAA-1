@@ -4,16 +4,16 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_marginVertical="8dp"
-    android:layout_marginHorizontal="12dp"
-    app:cardCornerRadius="4dp">
+    android:layout_marginVertical="4dp"
+    android:layout_marginHorizontal="16dp"
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="18dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingVertical="8dp"
-        android:paddingHorizontal="16dp"
-        android:elevation="4dp">
+        android:paddingHorizontal="16dp">
 
         <ImageView
             android:id="@+id/iv_user_avatar"
@@ -21,16 +21,16 @@
             android:layout_height="56dp"
             android:src="@drawable/user1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintTop_toTopOf="@id/tv_username"
+            app:layout_constraintBottom_toBottomOf="@id/tv_location"/>
 
         <TextView
             android:id="@+id/tv_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
             tools:text="Username"
+            android:fontFamily="@font/poppins_semibold"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="14sp"
@@ -42,27 +42,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="User's name"
+            android:fontFamily="@font/poppins_light"
+            android:textSize="12sp"
             app:layout_constraintStart_toStartOf="@id/tv_username"
             app:layout_constraintTop_toBottomOf="@id/tv_username"/>
 
         <ImageView
+            android:id="@+id/iv_placeholder"
             android:layout_width="12dp"
             android:layout_height="12dp"
-            android:layout_marginEnd="4dp"
+            android:layout_marginTop="4dp"
             android:src="@drawable/placeholder"
-            app:layout_constraintEnd_toStartOf="@id/tv_location"
-            app:layout_constraintTop_toTopOf="@id/tv_name"
-            app:layout_constraintBottom_toBottomOf="@id/tv_name"/>
+            app:layout_constraintStart_toStartOf="@id/tv_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"/>
 
         <TextView
             android:id="@+id/tv_location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
             tools:text="Location"
-            android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/tv_name"
-            app:layout_constraintBottom_toBottomOf="@id/tv_name"/>
+            android:textSize="10sp"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintStart_toEndOf="@id/iv_placeholder"
+            app:layout_constraintTop_toTopOf="@id/iv_placeholder"
+            app:layout_constraintBottom_toBottomOf="@id/iv_placeholder"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
