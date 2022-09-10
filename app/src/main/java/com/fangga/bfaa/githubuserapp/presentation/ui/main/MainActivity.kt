@@ -1,5 +1,6 @@
 package com.fangga.bfaa.githubuserapp.presentation.ui.main
 
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.fangga.bfaa.githubuserapp.base.BaseActivity
 import com.fangga.bfaa.githubuserapp.databinding.ActivityMainBinding
@@ -7,7 +8,7 @@ import com.fangga.bfaa.githubuserapp.presentation.adapter.UserAdapter
 import com.fangga.bfaa.githubuserapp.util.ScreenOrientation
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
-    private val viewModel = MainViewModel()
+    private lateinit var viewModel: MainViewModel
 
     override fun inflateViewBinding(): ActivityMainBinding {
         return ActivityMainBinding.inflate(layoutInflater)
@@ -18,6 +19,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     }
 
     override fun ActivityMainBinding.binder() {
+        viewModel = ViewModelProvider(this@MainActivity).get(MainViewModel::class.java)
+
         val rvAdapter = UserAdapter()
         val listOfUsers = viewModel.getUsersData(this@MainActivity)
 

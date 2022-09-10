@@ -3,10 +3,11 @@ package com.fangga.bfaa.githubuserapp.presentation.ui.main
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.res.TypedArray
+import androidx.lifecycle.ViewModel
 import com.fangga.bfaa.githubuserapp.R
 import com.fangga.bfaa.githubuserapp.model.User
 
-class MainViewModel {
+class MainViewModel: ViewModel() {
 
     @SuppressLint("Recycle")
     fun getUsersData(context: Context): ArrayList<User> {
