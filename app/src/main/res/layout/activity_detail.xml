@@ -148,11 +148,8 @@
 
         <TextView
             android:id="@+id/tv_company_value"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Value"
             android:text="@string/university_of_brawijaya"
-            android:fontFamily="@font/poppins_semibold"
-            android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@id/tv_company"
             app:layout_constraintTop_toBottomOf="@id/tv_company"/>
 
@@ -177,11 +174,8 @@
 
         <TextView
             android:id="@+id/tv_location_value"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Value"
             android:text="@string/lamongan_indonesia"
-            android:fontFamily="@font/poppins_semibold"
-            android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@id/tv_location"
             app:layout_constraintTop_toBottomOf="@id/tv_location"/>
 
@@ -205,11 +199,8 @@
 
         <TextView
             android:id="@+id/tv_repository_value"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Value"
             android:text="@string/_32"
-            android:fontFamily="@font/poppins_semibold"
-            android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@id/tv_repository"
             app:layout_constraintTop_toBottomOf="@id/tv_repository"/>
 
