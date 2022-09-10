@@ -2,6 +2,7 @@ package com.fangga.bfaa.githubuserapp.presentation.ui.main
 
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.fangga.bfaa.githubuserapp.R
 import com.fangga.bfaa.githubuserapp.base.BaseActivity
 import com.fangga.bfaa.githubuserapp.databinding.ActivityMainBinding
 import com.fangga.bfaa.githubuserapp.presentation.adapter.UserAdapter
@@ -32,7 +33,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         rvAdapter.submitData(listOfUsers)
 
         supportActionBar?.apply {
-            title = "Github User App"
+            title = getString(R.string.app_name)
             elevation=1f
         }
     }

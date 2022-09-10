@@ -9,6 +9,8 @@ import androidx.viewbinding.ViewBinding
 abstract class BaseRecyclerViewAdapter<VB: ViewBinding, ListType>
     : RecyclerView.Adapter<BaseRecyclerViewAdapter<VB, ListType>.BaseViewHolder>() {
 
+    lateinit var itemView: View
+
     private val itemList = arrayListOf<ListType>().toMutableList()
 
     protected abstract fun inflateViewBinding(
@@ -21,7 +23,6 @@ abstract class BaseRecyclerViewAdapter<VB: ViewBinding, ListType>
 
     var position: Int? = null
     val size get() = itemList.size
-    var itemView: View? = null
 
     fun submitData(data: List<ListType>) {
         val diffCallback = diffUtilBuilder(itemList, data)

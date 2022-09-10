@@ -23,13 +23,15 @@ class UserAdapter: BaseRecyclerViewAdapter<ItemListUserBinding, User>() {
             tvName.text = data.name
             tvLocation.text = data.location
 
-            Glide.with(itemView!!.context)
-                .load(data.avatar)
-                .apply(RequestOptions.circleCropTransform())
-                .into(binding.ivUserAvatar)
+            itemView?.let {
+                Glide.with(it.context)
+                    .load(data.avatar)
+                    .apply(RequestOptions.circleCropTransform())
+                    .into(binding.ivUserAvatar)
+            }
 
-            itemView!!.setOnClickListener{
-                val intent = Intent(itemView!!.context, DetailActivity::class.java)
+            itemView?.setOnClickListener{
+                val intent = Intent(itemView?.context, DetailActivity::class.java)
                 intent.putExtra(EXTRA_USER,data)
                 itemView!!.context.startActivity(intent)
             }
