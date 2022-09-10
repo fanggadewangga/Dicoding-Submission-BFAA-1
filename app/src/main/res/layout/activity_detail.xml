@@ -16,7 +16,7 @@
         style="@style/Title"
         android:text="@string/profile"
         android:fontFamily="@font/poppins_bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/box"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
@@ -116,6 +116,7 @@
         app:layout_constraintTop_toBottomOf="@id/tv_following_value"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/box"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
