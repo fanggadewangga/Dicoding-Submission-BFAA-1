@@ -24,14 +24,14 @@ class MainViewModel {
 
         for (position in listOfUsername.indices){
             val user = User(
-                listOfUsername[position],
-                listOfName[position],
-                listOfLocation[position],
-                listOfRepository[position],
-                listOfCompany[position],
-                listOfFollower[position],
-                listOfFollowing[position],
-                listOfAvatar.getResourceId(position,0)
+                username = listOfUsername[position],
+                name = listOfName[position],
+                location = listOfLocation[position],
+                repository = listOfRepository[position],
+                company = listOfCompany[position],
+                follower = listOfFollower[position],
+                following = listOfFollowing[position],
+                avatar = listOfAvatar.getResourceId(position,0)
             )
 
             listOfUsers.add(user)

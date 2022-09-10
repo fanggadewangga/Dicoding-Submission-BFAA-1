@@ -27,5 +27,10 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         }
 
         rvAdapter.submitData(listOfUsers)
+
+        supportActionBar?.apply {
+            title = "Github User App"
+            elevation=1f
+        }
     }
 }

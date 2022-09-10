@@ -4,6 +4,228 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".presentation.ui.detail.DetailActivity">
+
+    <TextView
+        android:id="@+id/tv_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="4dp"
+        style="@style/Title"
+        android:text="@string/profile"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_user_avatar"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/user1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_profile"
+        android:contentDescription="@string/user_avatar" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        tools:text="fanggadewangga"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/iv_user_avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="fangga"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_vertical_line"
+        android:layout_width="32dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"/>
+
+    <TextView
+        android:id="@+id/tv_follower_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        tools:text="24"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_vertical_line"/>
+
+    <TextView
+        android:id="@+id/tv_follower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/follower"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_follower_value"/>
+
+    <TextView
+        android:id="@+id/tv_following_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        tools:text="32"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_follower"/>
+
+    <TextView
+        android:id="@+id/tv_following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/following"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_following_value"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="32dp"
+        android:background="@drawable/grey_rounded_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_following"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_company"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/company"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Company"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/iv_company"
+            app:layout_constraintTop_toTopOf="@id/iv_company"
+            app:layout_constraintBottom_toBottomOf="@id/iv_company"/>
+
+        <TextView
+            android:id="@+id/tv_company_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="University of Brawijaya"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/tv_company"
+            app:layout_constraintTop_toBottomOf="@id/tv_company"/>
+
+
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/location"
+            app:layout_constraintTop_toBottomOf="@id/tv_company_value"
+            app:layout_constraintStart_toStartOf="@id/iv_company"/>
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Location"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/iv_location"
+            app:layout_constraintTop_toTopOf="@id/iv_location"
+            app:layout_constraintBottom_toBottomOf="@id/iv_location"/>
+
+        <TextView
+            android:id="@+id/tv_location_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lamongan, Indonesia"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/tv_location"
+            app:layout_constraintTop_toBottomOf="@id/tv_location"/>
+
+        <ImageView
+            android:id="@+id/iv_repository"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/folder"
+            app:layout_constraintTop_toBottomOf="@id/tv_location_value"
+            app:layout_constraintStart_toStartOf="@id/iv_location"/>
+
+        <TextView
+            android:id="@+id/tv_repository"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Repository"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/iv_repository"
+            app:layout_constraintTop_toTopOf="@id/iv_repository"
+            app:layout_constraintBottom_toBottomOf="@id/iv_repository"/>
+
+        <TextView
+            android:id="@+id/tv_repository_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="32"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/tv_repository"
+            app:layout_constraintTop_toBottomOf="@id/tv_repository"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -35,7 +35,7 @@ abstract class BaseRecyclerViewAdapter<VB: ViewBinding, ListType>
         diffResult.dispatchUpdatesTo(this)
     }
 
-    inner class BaseViewHolder(val view: VB): RecyclerView.ViewHolder(view.root) {
+    inner class BaseViewHolder(private val view: VB): RecyclerView.ViewHolder(view.root) {
         fun bind(item: ListType) {
             this@BaseRecyclerViewAdapter.itemView = itemView
             binder(item, view)

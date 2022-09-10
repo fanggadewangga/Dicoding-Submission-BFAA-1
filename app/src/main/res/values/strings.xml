@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Github User App</string>
     <string name="action_settings">Settings</string>
+    <string name="follower">Follower</string>
+    <string name="following">Following</string>
+    <string name="profile">Profile</string>
+    <string name="user_avatar">user_avatar</string>
+    <string name="line">line</string>
 
 
     <!-- Strings used for user's username -->

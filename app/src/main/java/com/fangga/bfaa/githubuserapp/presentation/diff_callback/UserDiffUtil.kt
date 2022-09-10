@@ -4,8 +4,8 @@ import com.fangga.bfaa.githubuserapp.base.BaseDiffUtil
 import com.fangga.bfaa.githubuserapp.model.User
 
 class UserDiffUtil(
-    private val oldList: List<User>,
-    private val newList: List<User>
+    oldList: List<User>,
+    newList: List<User>
 ): BaseDiffUtil<User, String>(oldList,newList) {
     override fun User.getItemIdentifier(): String = this.username
 }
