@@ -6,6 +6,12 @@
     <string name="profile">Profile</string>
     <string name="user_avatar">user_avatar</string>
     <string name="line">line</string>
+    <string name="company">Company</string>
+    <string name="university_of_brawijaya">University of Brawijaya</string>
+    <string name="location">Location</string>
+    <string name="lamongan_indonesia">Lamongan, Indonesia</string>
+    <string name="repository">Repository</string>
+    <string name="_32">32</string>
 
 
     <!-- Strings used for user's username -->

@@ -15,7 +15,6 @@
         android:layout_marginTop="4dp"
         style="@style/Title"
         android:text="@string/profile"
-        android:fontFamily="@font/poppins_bold"
         app:layout_constraintStart_toStartOf="@id/box"
         app:layout_constraintTop_toTopOf="parent"/>
 
@@ -63,7 +62,8 @@
         android:src="@drawable/line"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_name"/>
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        android:contentDescription="@string/line" />
 
     <TextView
         android:id="@+id/tv_follower_value"
@@ -135,14 +135,15 @@
             android:layout_height="24dp"
             android:src="@drawable/company"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@string/company" />
 
         <TextView
             android:id="@+id/tv_company"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="Company"
+            android:text="@string/company"
             android:fontFamily="@font/poppins_bold"
             android:textColor="@color/black"
             android:textSize="16sp"
@@ -154,7 +155,7 @@
             android:id="@+id/tv_company_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="University of Brawijaya"
+            android:text="@string/university_of_brawijaya"
             android:fontFamily="@font/poppins_semibold"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@id/tv_company"
@@ -168,14 +169,15 @@
             android:layout_marginTop="16dp"
             android:src="@drawable/location"
             app:layout_constraintTop_toBottomOf="@id/tv_company_value"
-            app:layout_constraintStart_toStartOf="@id/iv_company"/>
+            app:layout_constraintStart_toStartOf="@id/iv_company"
+            android:contentDescription="@string/location" />
 
         <TextView
             android:id="@+id/tv_location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="Location"
+            android:text="@string/location"
             android:fontFamily="@font/poppins_bold"
             android:textColor="@color/black"
             android:textSize="16sp"
@@ -187,7 +189,7 @@
             android:id="@+id/tv_location_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lamongan, Indonesia"
+            android:text="@string/lamongan_indonesia"
             android:fontFamily="@font/poppins_semibold"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@id/tv_location"
@@ -200,14 +202,15 @@
             android:layout_marginTop="16dp"
             android:src="@drawable/folder"
             app:layout_constraintTop_toBottomOf="@id/tv_location_value"
-            app:layout_constraintStart_toStartOf="@id/iv_location"/>
+            app:layout_constraintStart_toStartOf="@id/iv_location"
+            android:contentDescription="@string/repository" />
 
         <TextView
             android:id="@+id/tv_repository"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="Repository"
+            android:text="@string/repository"
             android:fontFamily="@font/poppins_bold"
             android:textColor="@color/black"
             android:textSize="16sp"
@@ -219,7 +222,7 @@
             android:id="@+id/tv_repository_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="32"
+            android:text="@string/_32"
             android:fontFamily="@font/poppins_semibold"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@id/tv_repository"
