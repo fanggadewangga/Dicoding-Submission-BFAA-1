@@ -140,13 +140,8 @@
 
         <TextView
             android:id="@+id/tv_company"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            style="@style/Detail"
             android:text="@string/company"
-            android:fontFamily="@font/poppins_bold"
-            android:textColor="@color/black"
-            android:textSize="16sp"
             app:layout_constraintStart_toEndOf="@id/iv_company"
             app:layout_constraintTop_toTopOf="@id/iv_company"
             app:layout_constraintBottom_toBottomOf="@id/iv_company"/>
@@ -174,13 +169,8 @@
 
         <TextView
             android:id="@+id/tv_location"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            style="@style/Detail"
             android:text="@string/location"
-            android:fontFamily="@font/poppins_bold"
-            android:textColor="@color/black"
-            android:textSize="16sp"
             app:layout_constraintStart_toEndOf="@id/iv_location"
             app:layout_constraintTop_toTopOf="@id/iv_location"
             app:layout_constraintBottom_toBottomOf="@id/iv_location"/>
@@ -207,13 +197,8 @@
 
         <TextView
             android:id="@+id/tv_repository"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            style="@style/Detail"
             android:text="@string/repository"
-            android:fontFamily="@font/poppins_bold"
-            android:textColor="@color/black"
-            android:textSize="16sp"
             app:layout_constraintStart_toEndOf="@id/iv_repository"
             app:layout_constraintTop_toTopOf="@id/iv_repository"
             app:layout_constraintBottom_toBottomOf="@id/iv_repository"/>
